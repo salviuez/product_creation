@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+.profile-pic {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-container {
+  margin-bottom: 20px;
+  height: min-content;
+  margin-top: 50px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product-poster {
+
+  height: 600px;
+  width: 100%;
+  /* zoom  in */
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.product-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-container {
+  background-color: orange;
+  width: 340px;
+}
+
+/* 
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+} */
+
+.product-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.add-product-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.8rem;
+  margin: 100px auto;
+  max-width: 350px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.product-detail-container {
+  max-width: 750px;
+  padding: 16px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.basic-form {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
 }
